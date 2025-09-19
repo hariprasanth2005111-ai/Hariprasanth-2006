@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+
+background-color: #00ECFF;
+
+}
+
+header {
+background-color: #3a8dec;
+color: #fff;
+text-align: center;
+padding: 2rem 0;
+position: relative; /* Add this */
+}
+
+.header-content h1 {
+font-size: 2.5rem;
+}
+
+/* Add styles for the round profile picture */
+.profile-picture {
+width: 100px; /* Adjust the size as needed */
+height: 100px;
+border-radius: 75%; /* Create a circular shape */
+object-fit: cover; /* To ensure the image fills the circular area */
+position: absolute; /* Add this */
+top: 75px; /* Adjust top position as needed */
+left: 75px; /* Adjust left position as needed */
+}
+
+nav {
+background-color: #4f5252;
+color: #FF00FF;
+text-align: center;
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+margin: 0 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: #fff;
+}
+
+.section-content {
+background-color: #fff;
+padding: 2rem;
+margin: 1rem;
+border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+text-align: justify;
+}
+
+.download-button {
+background-color: #333;
+color: #fff;
+padding: 0.5rem 1rem;
+text-decoration: none;
+border-radius: 20px;
+display: inline-block;
+margin-top: 10px;
+align-self: center;
+}
+
+.download-button:hover {
+background-color: #555;
+}
+
+footer {
+text-align: center;
+padding: 1rem 0;
+background-color: #333;
+color: #fff;
+}
+
+ul {
+list-style-type: disc;
+padding-left: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-content">
+<!-- Add your profile picture here -->
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADIAJYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD0ilpKWpGApwpBTh1pCAUuKBUc1zDboWlkCAdSTigCbFFZVxr9jDG+ycNIqlghO0kfjisVPH9gsrxX0P2fAykgcMrfiKBnWyypChZmCgDOTTI7hRGhdgCVBIrzXWPiPBcWcsEEfz7doYn5TnvjHpXGXvjS/vHXzpuUG0YOOP8AGgD3RtZs47hIjOhDk4IPHGO/1OK0VZXztYHBwcGvm6LWJJZleSYhv72eldboHiS60lDJG3m+YeTI/wAo4GPyoA9l20EVj6P4itNSjhHmIssmcID6Zz/I/lW3jigCIiinkcU3FADcUU6koASilooAr4oopaYgxTh60nQZ9KZNMsIDdQTjigB00nlRM+QMDrjIFeX+JPFV3LdPHay/cBG5Rkfh1x9a0/F3ibexsrcuEUfvnRsfgDzg+teb3E8QcuOv+0aQyO8vrmTc91Puycksoz+dY8t5GzEFmbnrU0ksl7Ns6ID1zgfnU8NpFCrFjub/AGRxTsFynEGckGPP1yAKbN5kfRYzn/az/SrLxXsrkxuyrnjccfyoOn/KWlkw/cj1piMwSFTl1/Kte11SdLNrePARjnJHIA/zn8PzzpYYo2wJT7fLxSJE7yKUOCOeO9AHRaLq9xo+pQ3qHIt5QWX1Hevc9L8WadqTQpHMmZYhKnzDHuv+8uRkfjXzvZ5+1PuOY3jOeeM9PzrT0pjayRKZGBDfLjjrgZ/AZpDPpFXV87SD9KDXnHh7xWthKwvmdoPJQeZnhfmxuP4sR9AK9GyGUMpBB5BB60gENJSmkoAM8UUlFMCHNGcUlIx+U/SgQy4uVt4yW464rifEGt29j0fcz9FUcfj6fzrQ1me9htJGa7VAxwqhVKj2zXluqXDS3JeVy2e570DSDUb0y/MoAB9ecf5zWJAm9t7nceo46VYuNqQNIzDp8uT0/CktAI4hwNoG4nrk44GaYEoPJAULz0Xr+dOIJwB65quYbiWRIxkFmBPGMCpjbXMcmxmyB0K45/PrQASz+VESyYI9P/1VmTI1wwIIRD1JNbCRAHJGSO2aV4FZcKACepJoEYr2DpHuADJ/eBpsMHlAMzbkPHHY1pyJ9lYnyhkj5gp4NUmOSQvKt14wfyoHYktJFN2ynkkAg++euPyqx9o37k25CZHT8jWWQIypVTuXJBA7danEoZlkjOCCCfp6f5//AFgHRadcyXMTWe8KJgFLMeAAev8An2r3+zj8mwt4j1SJVPOegr588Oac2qXYijXJZuB179SPQCvoG2OIEAAChQAB2xUgyY0lG6kzmmIKKWigCuaa3IIpTSGgDzvxHfyh51ltnkiDDbtUhXPv9BnGPWuCvcGba0bKB1BHSvbL7T/PVkXcFc/MS3FcBqfhGWHUwUKGMjIBzgdPcn1/SkUmefXw80hIRwBgk/w1LbSiKMQyDMZ4PHIGAP6Vq+INIfTp4G2N5UqkjJB6dSMdue/4E9apW2mG9mSOFsbiBk9qd9ASu7IrpfOzBVxuUYJHWrVpI0hJkPXoD1rs9E8L2mmwSI7GSSX77nj8B7VsWXgrS5n3qZQW67Wrn+sRudSw0rI4GDR9SvZiltZTyn1A4H1NdLZeBtQA829EahVyERtzE+nTFem2GlQ6faiGCPaoHUnOT61ceECIbeOp59aHVbKjQijx7UtDsjF+6JZ14K9G/WuUuNLmti3mIMLgkr+nNe7X9mJU/eIrcHkiuUvdORbjJRSy9M4OKz9q4lyoxkeV/ZAm534OOnf8qqywIh+XAGePY16PrGmxSWbyeWN6jrXBXKFLpUJ3YHPt7V0UqnOrnJWp8jsegfDTRyXe6crsI2/7R74z2/CvVVwqgDgDtXMeDrZF0GymAGTEMHb09f1/lXSg1ZkSZoBpgpwoEPFFIKKYEJphpxphFACVVubUTurHJwCCO2Dg/wBBVnFJikB598S7VFtLGTJ3b3X65wf6VgeEtOWVzdSfdj4Vffrk/wCe9dz43tlvNIWHC+aWzGzdjxx+Nc74TiKWUgZSG84gj04HFZVZLlaOijB8yZdayvZ5t6yqqg/KAvSrSnWLIgxmMrxzg/4VJqP2rfEtuCIt4MpT723uFHQn68VnLasNV/dy6kLfzlYyzFB+74yNu373uCBXNDVHXP3X1Op03VLgowmkBbdu5rQkv2Qs+ANwx+HpXKKWt7lCHdwW+UsMEj16n6da0dSu2axH7sBgOTjr9ayk2nZm8UmrpEeo63chtttGu4nkfhise5XV5UDybFz6r1qZbWQ207Jd+XKse6L5GO8kA9RnH49fQdap+beCCWYz36yBkWG3nG/fwd2ThcDpzz34NbKL5bs55SXNZXHQQzyRNDdbXRl4IBH4Vw1xD5V0Yp+ZIWKE+oFenQky2qtKgV8cgCuSurcP4mkcxGRIykki7NwbHQEd81dGaV7mdeDdkj03w9D5Ph3Tkxg/Z0J47kA1p4qrpd39v0u3uQoUOvQcDjj8PpV3FdK1VzjaadmIKcBQBSgVRIoFFKBRTAhK0wipyKYVoAh25o21JijFIDE1+MeRA5IwJACfYkZ/SsG02Nc3LwpsSWYuB9QMn8811OtQtNpU4RQXUB1z2IOc/lmuP075JXTJKk5XPUD098etclZWn6nfh3en6M6OFrcLtkUOSOAKcLVJTmO1Xj1Of0qK2KQsG4OMYBFasl5mz3IFUY5IrljF9ztbVtjmp45JdR2nqpwTVq+t3Fvyc0kFxaRTIXcmZjkqFJNaWsaha/Z4wwwOAWAJ7e1Ryu5akkrGNpySPE0ZTeiE8E9Pp6VeFrDkl0wO25iaTTJY4b1jA4ZXA4B4JrTubyJSVKLk9auztuRp2MS5CqTggj2rJDpA96wjBdhvU9yUGQP0P51pXDoxJH4VlWsEt5fRRgkiRwFZeiLnPQfhk+lXFNRsZya5r9jttCheHRLRJAA/l5P485/WtLFMRFRFRRhVGBUmK9GKsrHkyd22JilApcUuKokQCinAUUAMxTSKfSUwIyKbUlNNICNlDqyMMqRgj1Fcxf6Mtmwuokxg7WYMen0/Kup71BdwC4tZIv7w4Poe361nOmpamtOq4aLZnNRHc3fGKbfX6weXFLcRwxsONxAzSQED5emOCD2qxPaxXKhmiVuMciuG1nqelfmjoV4wHYYkVl9zzn8qdKsaAky59Acirlu6WoxJbLIAOMj+tSvfwsDtsEUjodvSqVh27swJLuK02t9oRXzxlsA/TNXHuJJvnOclaSazju5QZ4VYdQGXilmKoxVQAB0AHApOzWgldMqgPK6ovLMwAHua6bS9HSwIdkiDr93y846deazNDtTc3wlZf3cPP/Auw/r+FdTiumnTVk2cVaq02kKKeKaop4FdByi4pcUAU7FACUU7FFMRFSGlpKAGmmGnmmkUANpDz39znjA7mlNUvFeoL4e8Lz3bY80rhAR1cjIz7Drj1HtQldjOSuZBDczSp8yeYScDtnrVmw1aCT5fMUeme9UNKVptJtS+SxhTdn12is7UNMfzjLCcHBzXBaMm0z0lzRSaO4imt2X5nXPseaWSSxC7gx4yMmvMzqN7bllZmwg5JP0qIazeTA7MsMEHr+lWqL6Ml4hdUegXF7ChzvUKPesia8EjDy/mJPbtXOwW99ctumchc8A5Fb9rbCNeB06n1qeVQ82HPKfkjrPDEZXS5GwcecRn/gIraxXnugeJRp/iqaxlx5DxjOWwMnH3snp79jz6ivR5ofKcYO5GAZG9VPQ12QXupnDU+NjAKeKaKcKogcKcKaKcKAHUUUUAQUmaKQmmAGmmnoryybI1LOewrRh0aRgTM4T6c4osBUsLX7Tcjdjy05f6Vw/xfErx2tqwPlmEORnjc0gz/WvT7OFEsnAPyyEgHPYnArz74nRi4vih6x2ysPqGY/8A1qfewLdXMTSebdV9ABV2a1yOO9UdJOEU+wrdRQyZxXkydmezFXRimwSTllGfXFOGj29sPMRFXPYAVp+WN2MU17c7evHvRzhyIyPs4aT5VAqwYfLiq5HDyT1qOcfKR6Uc1w5bHB31uX8Sqy/8tUMTfTk/zFfQd5Dv09icboXP5Z6V4zY2YuddMrcorCMe2ep/I4r3dk+SYAAE5I/KvSp39mrnlVrc7scwORkGnCp5LQxhXDDa7NgDtgn/AOtUJBXHQg9CO9XYzuOApwFNFPFIBQKKcBRQBVCs3Pb1NWrOx+0uCwPl5xwep6/l/iKesI8jecbi208cAda0NPUKAAezf0q7WVxXJ44Y4XSNECjDHgd+P8aknfy4WbIGB3pf+Ww/3TUN7KkcI8wgIT83GTj2H1xUjHqgSKGLHGQPyGf6V5n4yLy+JL2N+UCqqf8AfAP9TXXyeIbhp8x6W7ojsgJlx0OM4wa47W3fU9Ta7SCSM3KqyqR8y4UKR+amrimJsy9Mi+VcewrbRTGwVhwelGhaSb7Tp5rdibmB/nhx95T0I9/vfl2qZ25CspV1OCCMYNeTWg4Ssz16NSM46CSRcn5Tz7UwQM5xV9OQM8inMEU8VgbmVcL5K7V61m3rmOLHTjJrauQnm7iOgrG1SCR40lI2xuxVPV8dcewyMn3rWnFylZGdSSjG7INGtwbm1Uj5nlU/mRzXsoP7xh7A/wA68r0yBoNYsY3XBMsLs2eApKkfoQa9OhuraeZvJuIpDtGQjg46+n1r15KySR417ttmffKB9nXJwAR/KoJUDhWBGGRfx7fjU2oAmRRnB2fzNMkBGyJR90batLQhjptOZVaWE5UE5Q9gD2P+NVcFThlIPoRg10MYAT6kn9aiNtHNCodedo571kWYooq1NZSRyFUBYUUACnMW0dF56fQVbssbc5/iI/Qf4VWiGEkCnG7/AAP/ANaprPh9uehB/QirexKLp/1y/wC6f6U2S3SWVHcZ2A7fx609uGX34p1ZlkEECIjDA5dm/Nia5m+0qO6ke3OVIdij4zg+/tx/noeqQ5Z/Zv6Cs6WAC9Yjgluv1rSD3IkjnPDNhcWN9dXAzIiqAQp+9kk5yO4wOPc57Vf1e1iuW+1xH5yMSqRz9f05/CtCK2SO78yMY25/x/pWjNFBKmJlXB7moqwjNWZdKbg7o4krgUzB3Y5rU1XRpLJXuISZLccsP4kH9RWVEHu7hLeAZdufoO5ry5UpKVj14VoyjzE0NiL2cRBtqjl3z09PxNO8Q6L50Ntc2kUpNspgAHTa20k468bB+ddBZ6fBaKtu77mznYpycnuT+H6VoyQLJ5K7Qqo4cKPb/wCvXo0aapLzPMr1XVl5HNaJ4fma5N7egphNiR4x/Dt784A4q3eaLF9oDRId0TJKuD3yRXRUwKrSFu4wOv8An1rXndzHlMu43vOF25IAB+v+TUgCy3QcDgkVK5BvTgDj+gpqjbMQPfFVfQnqXeRD77afTWHAHuKdWRoN4LkegFFC4Lse4wP6/wBaKAMuFDlgvP8A+sVNbEeZkdwO3uKZFlbooegzn8P/ANVJbKolyOeB/wChCtWQjRf70f8Avf0NPprfeT6/0NOrIsaOGb86p3B23JP0q4PvNWfdDN1gjjI/pVR3JlsPT/WgEc55/Grm3dFtPcYqngGcEdyKur92iQIUYKDA4IqjY6Xa6WsrQJ8zksWPXHXaPQDsKuxnMSH1UUjsDAzDptJ/SptqVdpFOwtlhzgd8/oR/WrpHzg+xqvakHp7/wBKs/x/hVS3EthaZGOG92NPpF6VIyiw/fsQOcn+tEA3Sg05MGYk+v8AUUtuuWY8dun1rRkFo9V+v9KdSH7wpazLGO4jXJHU0VUvWJcDnj0oq1G6JciGc7J3JHOSPzotRiX8v/QhRRVdBdTSb7yfX+hp1FFZFjV+831/pVOck3JXtkf0ooqo7ksSMYkQn1FXV+4KKKJBEI/9Wo9hUbf8enplMUUUuo+hHaLgH6n+lWB98/Qf1oooe4LYdSLyoNFFIZTThmOOvP6ils8Yb6iiirexC3LR/wBYPof6UrnajH0GaKKgszY9rFmuFDc4wQDk/wCf50UUVta5mf/Z" class="profile-picture">
+<h1>Hariprasanth P</h1>
+<p>Am Information technology Student</p>
+</div>
+</header>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#resume">Resume</a></li>
+
+</ul>
+</nav>
+
+<section id="about me">
+<div class="section-content">
+<h2>About Me</h2>
+<p>Hi! I'm <b>Hariprasanth P</b>, a BSc Information technology student at Bharathiyar University. I'm passionate about technology and enjoy coding, problem-solving, and learning new things in the tech world. I’ve worked with languages like Python, Java, and C++, and I'm particularly interested in [area of interest, like AI, web development, etc.]. Outside of class, I love collaborating on projects and participating in hackathons. I’m excited to keep growing my skills and make a real impact in the tech industry!</p>
+
+</div>
+</section>
+
+<section id="education">
+<div class="section-content">
+<h2>Education</h2>
+<p>Bharathiyar University - Information technology</p>
+
+
+</div>
+</section>
+
+<section id="skills">
+<div class="section-content">
+<h2>Skills</h2>
+<ul>
+<li>Html & CSS</li>
+<li>Cloud Computing</li>
+<li>Python</li>
+<li>ML & AI</li>
+<li>Java</li>
+<li>C & C++</li>
+<li>Java script</li>
+</ul>
+</div>
+</section>
+
+<section id="projects">
+<div class="section-content">
+<h2>Projects</h2>
+<ul>
+<li><a href="#">E Cart website</a></li>
+<li><a href="#">Cloud Security IBM</a></li>
+<li><a href="#">IBM chatbot</a></li>
+<li><a href="#">College Portal</a></li>
+<!-- Add more project links here -->
+</ul>
+</div>
+</section>
+
+<section id="resume">
+
+<div class="section-content">
+<center>
+<h2>Resume</h2>
+<a href="https://github.com/hariprasanth2005111-ai/Hariprasanth-2006/blob/ad5953b2a6e08c6fe7ed19d3654b7181da7be2f3/IMG-20250919-WA0013.jpg">Download CV</a>
+</center>
+</div>
+
+</section>
+
+<footer>
+<p>&copy; 2025Hariprasanth P</p>
+</footer>
+
+<script>
+// Smooth scrolling to section when clicking on navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop,
+behavior: 'smooth'
+});
+}
+});
+});
+</script>
+</body>
+</html>
